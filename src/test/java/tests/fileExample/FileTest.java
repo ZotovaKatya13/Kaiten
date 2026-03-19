@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import tests.BaseTest;
 
 import java.io.File;
-import java.util.HashMap;
+
 
 import static io.restassured.RestAssured.given;
 

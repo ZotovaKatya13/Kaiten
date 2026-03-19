@@ -1,6 +1,5 @@
 package tests;
 
-import constants.Constants;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -8,11 +7,12 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class CreateSpace extends BaseTest{
+public class CreateSpaceTest extends BaseTest{
 
     @Test
     public void createNewSpace(){
         Response response = given()
+              //  .filter(new AllureRestAssured())
                 .contentType(ContentType.JSON)
                 .header("Authorization", token)
                 .body("{\n" +
