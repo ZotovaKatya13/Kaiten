@@ -8,7 +8,6 @@ import tests.BaseTest;
 
 import java.io.File;
 
-
 import static io.restassured.RestAssured.given;
 
 public class FileTest extends BaseTest {
